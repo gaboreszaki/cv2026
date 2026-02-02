@@ -1,0 +1,16 @@
+.card {
+  border: var(--global-border);
+  padding: clamp(5px, 2rem, 4rem) clamp(5px, 1.4rem, 2rem);
+  background: rgba(from var(--primary-color) r g b / 0.05);
+  border-radius: var(--global-radius);
+  backdrop-filter: blur(10px);
+  margin: clamp(5px, 2rem, 3rem) auto;
+  transition: all 1s ease-in-out;
+
+  &:hover {
+    border: rgba(from var(--primary-color) r g b / 0.6) 1px solid;
+    background: rgba(from var(--primary-color) r g b / 0.2);
+    transition: all 0.2s ease-in-out;
+
+  }
+}

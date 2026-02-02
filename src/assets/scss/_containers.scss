@@ -1,0 +1,33 @@
+body {
+  font-family: "Switzer", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  //background: url("../images/concept_2.png") no-repeat center center fixed;
+  //background-size: cover;
+
+
+  letter-spacing: .01rem;
+
+  &:before {
+    content: "";
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at center, var(--primary-color) 0%, var(--bg-color) 70%);
+    pointer-events: none;
+    filter: blur(100px);
+    z-index: -1;
+  }
+}
+
+
+.container {
+  width: clamp(320px, 90%, 1200px);
+  margin: 0 auto;
+}

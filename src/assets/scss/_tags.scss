@@ -1,0 +1,11 @@
+
+.tag{
+  //background: black;
+  padding: 5px 30px;
+  clip-path: polygon(calc(0% + 20px) 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+  text-wrap: nowrap;
+  background: var( --primary-color)
+
+}
+
+

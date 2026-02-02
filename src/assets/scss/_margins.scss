@@ -1,0 +1,23 @@
+$step: 0.4rem;
+.m{
+
+  @for $i from 1 through 10 {
+    &-#{$i}{
+      margin: $i * $step;
+    }
+    &t-#{$i}{
+      margin-top: $i * $step;
+    }
+    &b-#{$i}{
+      margin-bottom: $i * $step;
+    }
+    &s-#{$i}{
+      margin-left: $i * $step;
+    }
+    &e-#{$i}{
+      margin-right: $i * $step;
+    }
+  }
+
+
+}

@@ -1,0 +1,16 @@
+@for $i from 1 through 10 {
+  ul.pulse li:nth-child(n + #{$i}) {
+    animation-fill-mode: backwards;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: $i * 1s;
+  }
+}
+
+@keyframes pulse {
+  0% {background: var( --primary-color);}
+  50% {background: var( --super-green);}
+  100% {background: var( --primary-color);}
+}
+

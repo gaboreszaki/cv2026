@@ -1,0 +1,97 @@
+
+.text{
+  font-size: var(---default-font-size);
+  line-height: var(--default-line-height);
+
+  &-sm{
+    font-size: 0.8rem;
+  }
+  &-lg{
+    font-size: 1.2rem;
+  }
+  &-xl{
+    font-size: 1.5rem;
+  }
+  &-xxl{
+    font-size: 2rem;
+  }
+  &-xxxl{
+    font-size: 3rem;
+  }
+  &-xs{
+    font-size: 0.5rem;
+  }
+  &-xxs{
+    font-size: 0.3rem;
+  }
+  &-bold{
+    font-weight: bold;
+  }
+  &-italic{
+    font-style: italic;
+  }
+
+
+  &-muted{
+    color: var(--color-muted);
+  }
+  &-primary{
+    color: var(--);
+  }
+  &-secondary{
+    color: var(--secondary-color);
+  }
+  &-success{
+    color: var(--success-color);
+  }
+  &-danger{
+    color: var(--danger-color);
+  }
+
+  &-center{
+    text-align: center;
+  }
+  &-right{
+    text-align: right;
+  }
+  &-left{
+    text-align: left;
+  }
+  &-between{
+    justify-content: space-between;
+  }
+  &-uppercase{
+    text-transform: uppercase;
+  }
+  &-capitalize{
+    text-transform: capitalize;
+  }
+
+}
+
+
+h1, .h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+h2, .h2 {
+  font-size: 2.3rem;
+}
+
+h3, .h3 {
+  font-size: 1.8rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.2rem;
+}
+
+h6, .h6 {
+  font-size: 0.8rem;
+}
+

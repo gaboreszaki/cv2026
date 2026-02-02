@@ -1,0 +1,12 @@
+a {
+  text-decoration: none;
+  color: var(--color-highite);
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+
+  &:hover {
+    color: var(--text-color);
+    transition: all 0.5s ease-in-out;
+
+  }
+}
