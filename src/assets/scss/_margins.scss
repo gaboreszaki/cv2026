@@ -1,7 +1,7 @@
-$step: 0.4rem;
+$step: 0.5rem;
 .m{
 
-  @for $i from 1 through 10 {
+  @for $i from 1 through 20 {
     &-#{$i}{
       margin: $i * $step;
     }
@@ -16,6 +16,14 @@ $step: 0.4rem;
     }
     &e-#{$i}{
       margin-right: $i * $step;
+    }
+    &x-#{$i}{
+      margin-left: $i * $step;
+      margin-right: $i * $step;
+    }
+    &y-#{$i}{
+      margin-top: $i * $step;
+      margin-bottom: $i * $step;
     }
   }
 

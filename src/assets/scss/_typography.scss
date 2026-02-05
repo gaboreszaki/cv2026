@@ -7,16 +7,16 @@
     font-size: 0.8rem;
   }
   &-lg{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
   &-xl{
-    font-size: 1.5rem;
-  }
-  &-xxl{
     font-size: 2rem;
   }
-  &-xxxl{
+  &-xxl{
     font-size: 3rem;
+  }
+  &-xxxl{
+    font-size: 4rem;
   }
   &-xs{
     font-size: 0.5rem;
@@ -46,6 +46,12 @@
   }
   &-danger{
     color: var(--danger-color);
+  }
+  &-warning{
+    color: var(--warning-color);
+  }
+  &-info{
+    color: var(--info-color);
   }
 
   &-center{
