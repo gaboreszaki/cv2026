@@ -54,7 +54,7 @@ import StatCard from "@/components/StatCard.vue";
 
   </div>
   </div>
-  <div class="card pop-in">
+  <div class="card mb-5 pop-in">
     <div class="card-body text-center">
 
 
@@ -76,7 +76,7 @@ import StatCard from "@/components/StatCard.vue";
   </div>
 
 
-  <div class="card pop-in">
+  <div class="card mb-5 pop-in">
     <div class="card-body">
       <h3>Technical integrity over shortcuts.</h3>
       <p>

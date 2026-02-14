@@ -7,5 +7,11 @@
   background: var( --primary-color)
 
 }
+span.tag{
+  display: inline-flex;
+  //flex-wrap: wrap;
+  //gap: 1rem;
+  margin-bottom: 1rem;
+}
 
 

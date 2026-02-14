@@ -1,0 +1,42 @@
+.timeline-card{
+
+
+  display: flex;
+  gap: 1rem;
+  //margin-bottom: 2rem;
+
+  &:first-child .card, &:first-child .date{
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .date{
+    border-right: 10px solid var(--primary-color)  ;
+    font-size: 1.2rem;
+    padding-right: 2rem;
+    position: relative;
+    padding-top: 2rem;
+
+
+
+
+    &:before{
+      content: " ";
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #72B01D;
+      display: block;
+      position: absolute;
+      left: calc(100%  - 5px);
+
+    }
+  }
+
+  //&:first-child :first-child {border: 1px solid red;}
+}
