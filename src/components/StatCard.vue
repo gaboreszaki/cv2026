@@ -23,9 +23,16 @@ const percent = computed(()=>{
   <div class="stat"  data-value="A1">
     <div class="stat-title">
       {{ title }}
+        <div class="text-xs text-muted">
+            {{progress}} / 10
+        </div>
     </div>
+
     <div class="progressbar">
-      <span :style="percent">&nbsp;</span></div>
+
+      <span :style="percent" >&nbsp;</span>
+    </div>
+
   </div>
 </template>
 

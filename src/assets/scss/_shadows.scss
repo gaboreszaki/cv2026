@@ -1,0 +1,12 @@
+.shadow {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+.card:has(.shadow) .shadow  {
+  box-shadow: none;
+  transition: all 0.2s ease-in-out;
+}
+.card:has(.shadow):hover .shadow  {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: all 0.2s ease-in-out;
+}

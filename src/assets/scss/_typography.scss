@@ -1,133 +1,91 @@
-
-.text{
-  font-size: var(---default-font-size);
-  line-height: var(--default-line-height);
-
-  &-sm{
-    font-size: 0.8rem;
-  }
-  &-lg{
-    font-size: 1.6rem;
-  }
-  &-xl{
-    font-size: 2rem;
-  }
-  &-xxl{
-    font-size: 3rem;
-  }
-  &-xxxl{
-    font-size: 4rem;
-  }
-  &-xs{
-    font-size: 0.5rem;
-  }
-  &-xxs{
-    font-size: 0.3rem;
-  }
-  &-bold{
-    font-weight: bold;
-  }
-  &-italic{
-    font-style: italic;
-  }
-
-
-  &-muted{
-    color: var(--color-muted);
-  }
-  &-primary{
-    color: var(--);
-  }
-  &-secondary{
-    color: var(--secondary-color);
-  }
-  &-success{
-    color: var(--success-color);
-  }
-  &-danger{
-    color: var(--danger-color);
-  }
-  &-warning{
-    color: var(--warning-color);
-  }
-  &-info{
-    color: var(--info-color);
-  }
-
-  &-center{
-    text-align: center;
-  }
-  &-right{
-    text-align: right;
-  }
-  &-left{
-    text-align: left;
-  }
-  &-between{
-    justify-content: space-between;
-  }
-  &-uppercase{
-    text-transform: uppercase;
-  }
-  &-capitalize{
-    text-transform: capitalize;
-  }
-
+body {
+  font-family: Switzer-Variable, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  letter-spacing: 0.02rem;
 }
 
-
+// Headings (h1-h6)
 h1, .h1 {
-  font-size: 3rem;
-  line-height: 1.2;
-
-  & small{
-    font-size: 1.5rem;
-    display: block;
-  }
+  font-size: 3rem; line-height: 3rem; font-family: Switzer-Bold, sans-serif;
+  & small { font-size: 1.5rem; display: block; }
 }
 
 h2, .h2 {
-  font-size: 2.3rem;
-
-  & small{
-    font-size: 1.2rem;
-    display: block;
-  }
+  font-size: 2.3rem; line-height: 2.3rem; font-family: Switzer-Bold, sans-serif;
+  & small { font-size: 1.2rem; display: block; }
 }
 
 h3, .h3 {
-  font-size: 1.8rem;
-
-  & small{
-    font-size: 1rem;
-    display: block;
-  }
+  font-size: 1.8rem; font-family: Switzer-Bold, sans-serif;
+  & small { font-size: 1rem; display: block; font-family: Switzer-Regular, sans-serif; }
 }
 
 h4, .h4 {
-  font-size: 1.5rem;
-
-  & small{
-    font-size: 0.8rem;
-    display: block;
-  }
+  font-size: 1.5rem; font-family: Switzer-Regular, sans-serif;
+  & small { font-size: 0.8rem; display: block; }
 }
 
 h5, .h5 {
-  font-size: 1.2rem;
-
-  & small{
-    font-size: 0.7rem;
-    display: block;
+  font-size: 1.2rem; font-family: Switzer-Light, sans-serif;
+  & small { font-size: 0.7rem; display: block;
   }
 }
 
 h6, .h6 {
-  font-size: 0.8rem;
-
-  & small{
-    font-size: 0.6rem;
-    display: block;
-  }
+  font-size: 0.8rem; font-family: Switzer-Extralight, sans-serif;
+  & small { font-size: 0.6rem; display: block; }
 }
 
+.text {
+  // Text Sizes
+  font-size: var(---default-font-size); line-height: var(--default-line-height);
+  &-sm { font-size: 0.8rem; }
+  &-lg { font-size: 1.6rem; }
+  &-xl { font-size: 2rem; }
+  &-xxl { font-size: 3rem; }
+  &-xxxl { font-size: 4rem; }
+  &-xs { font-size: 0.7rem; }
+  &-xxs { font-size: 0.6rem; }
+  &-xxxs { font-size: 0.5rem; }
+
+  // Text Variations
+  &-bold { font-family: Switzer-Bold, sans-serif; }
+  &-italic { font-family: Switzer-Italic, sans-serif; }
+  &-light { font-family: Switzer-Light, sans-serif; }
+
+  // text colors
+  &-muted { color: var(--text-muted); }
+  &-primary { color: var(--primary-color); }
+  &-secondary { color: var(--secondary-color); }
+  &-success { color: var(--success-color); }
+  &-danger { color: var(--danger-color); }
+  &-warning { color: var(--warning-color); }
+  &-info { color: var(--info-color); }
+
+  // text alignments:
+  &-left { text-align: left; }
+  &-center { text-align: center; }
+  &-right { text-align: right; }
+  &-between { justify-content: space-between; }
+  &-around { justify-content: space-around; }
+  &-evenly { justify-content: space-evenly; }
+
+  // text transformations:
+  &-uppercase { text-transform: uppercase; }
+  &-capitalize { text-transform: capitalize; }
+
+  // text-rotate
+  &-rotate-90 { transform: rotate(90deg); }
+  &-rotate-0 { transform: rotate(0deg); }
+  &-rotate-180 { transform: rotate(180deg); }
+  &-rotate-270 { transform: rotate(270deg); }
+  &-rotate-45 { transform: rotate(45deg); }
+  &-rotate-135 { transform: rotate(135deg); }
+  &-rotate-225 { transform: rotate(225deg); }
+  &-rotate-315 { transform: rotate(315deg); }
+}

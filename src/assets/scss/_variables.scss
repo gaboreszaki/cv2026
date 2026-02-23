@@ -23,18 +23,17 @@
   --color-gray-dark: #343a40;
   --color-black: #000;
 
-
   // Theme Colors:
   --primary-color: rgba(from var(--color-primary) r g b / 0.4);
   --info-color: rgba(from var(--color-highite) r g b / 1);
   --success-color: rgba(from var(--color-super-green) r g b / 0.4);
   --warning-color: rgba(from var(--color-yellow) r g b / 0.4);
   --danger-color: rgba(from var(--color-red) r g b / 0.4);
-  --super-green: rgb(from var(--color-super-green) r g b );
+  --super-green: rgb(from var(--color-super-green) r g b);
 
   --text-color: var(--color-white);
+  --text-muted: var(--color-gray);
   --bg-color: var(--color-black);
-
 
   // Global Variables:
   --global-radius: 10px;
@@ -42,4 +41,7 @@
 
   --default-font-size: 1rem;
   --default-line-height: 2;
+
+
+  interpolate-size: allow-keywords;
 }

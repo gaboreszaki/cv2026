@@ -1,17 +1,16 @@
-.gap{
-  display: flex;
+.gap {
 
   @for $i from 1 through 10 {
-    &-#{$i}{
+    &-#{$i} {
       gap: $i * 0.5rem;
     }
   }
 }
-.gap-col{
-  display: flex;
-  flex-direction: column;
+
+.gap-col {
+
   @for $i from 1 through 10 {
-    &-#{$i}{
+    &-#{$i} {
       gap: $i * 0.5rem;
     }
   }

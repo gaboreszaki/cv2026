@@ -1,25 +1,17 @@
-
 .hero {
   width: 80%;
   margin: 2rem auto;
-
-
   display: flex;
   flex-direction: column;
   gap: 2rem;
 
-  //border: 1px solid var(--primary-color);
-
   & h1 {
-
     margin: 10% auto 1rem auto;
-
-
     text-align: center;
     text-wrap: balance;
   }
 
-  & ul{
+  & ul {
     padding: 0;
     margin: 0 auto 2rem auto;
     list-style: none;
@@ -29,8 +21,6 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-
-    //border: 1px solid var(--primary-color);
 
     & li {
       flex-wrap: nowrap;

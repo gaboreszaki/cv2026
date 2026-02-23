@@ -1,0 +1,22 @@
+
+.p {
+  $step: 0.5rem;
+  &-0 { padding: 0; }
+  &t-0 { padding-top: 0; }
+  &b-0 { padding-bottom: 0; }
+  &s-0 { padding-left: 0; }
+  &e-0 { padding-right: 0; }
+  &x-0 { padding-left: 0; }
+  &y-0 { padding-top: 0; }
+
+  @for $i from 1 through 20 {
+    &-#{$i} { padding: $i * $step; }
+    &t-#{$i} { padding-top: $i * $step; }
+    &b-#{$i} { padding-bottom: $i * $step; }
+    &s-#{$i} { padding-left: $i * $step; }
+    &e-#{$i} { padding-right: $i * $step; }
+    &x-#{$i} { padding-left: $i * $step; padding-right: $i * $step; }
+    &y-#{$i} { padding-top: $i * $step; padding-bottom: $i * $step; }
+  }
+
+}

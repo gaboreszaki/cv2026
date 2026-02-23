@@ -1,11 +1,9 @@
-.timeline-card{
-
+.timeline-card {
 
   display: flex;
   gap: 1rem;
-  //margin-bottom: 2rem;
 
-  &:first-child .card, &:first-child .date{
+  &:first-child .card, &:first-child .date {
     margin-top: 0;
     padding-top: 0;
   }
@@ -13,30 +11,41 @@
   .card {
     margin-bottom: 2rem;
     margin-top: 2rem;
+    width: 100%;
   }
 
-  .date{
-    border-right: 10px solid var(--primary-color)  ;
-    font-size: 1.2rem;
-    padding-right: 2rem;
+  .date {
+    border-right: 10px solid var(--primary-color);
+    text-wrap: nowrap;
     position: relative;
     padding-top: 2rem;
 
+    div {
+      --size: 1.4rem;
 
+      position: absolute;
 
+      left: calc(-100% - var(--size));
+      margin-top: 2.7rem;
+      font-size: var(--size);
+      text-transform: uppercase;
 
-    &:before{
+      line-height: var(--size);
+      padding: 0;
+
+    }
+
+    &:before {
       content: " ";
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background-color: #72B01D;
+      background-color: var(--color-primary);
       display: block;
       position: absolute;
-      left: calc(100%  - 5px);
+      left: calc(100% - 5px);
 
     }
   }
 
-  //&:first-child :first-child {border: 1px solid red;}
 }

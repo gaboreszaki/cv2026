@@ -4,15 +4,10 @@
   font-weight: 600;
   border-radius: 0.2rem;
   padding: 0.2rem 1.5rem;
-  /*border: 1px solid transparent;*/
   transition: all 0.8s ease-in-out;
-  /*box-shadow: 0 0 3px rgba(255,255,255, 0.8);*/
 
   &.high-lite {
-
     background-color: rgba(from var(--color-highite) r g b / 0.2);
-    /*border: 1px solid rgba(from var(--highliter-color) r g b / 0.4);*/
-
   }
 
   &:hover {

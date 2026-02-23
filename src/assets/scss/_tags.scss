@@ -1,17 +1,19 @@
+span.tag {
+  display: inline-flex;
+  margin-bottom: 1rem;
+}
 
-.tag{
-  //background: black;
+.tag {
   padding: 5px 30px;
   clip-path: polygon(calc(0% + 20px) 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
   text-wrap: nowrap;
-  background: var( --primary-color)
+  background: var(--primary-color);
+//  font-family: Switzer-Medium, sans-serif;
+//  text
+  font-weight: 300;
 
 }
-span.tag{
-  display: inline-flex;
-  //flex-wrap: wrap;
-  //gap: 1rem;
-  margin-bottom: 1rem;
-}
+
+
 
 

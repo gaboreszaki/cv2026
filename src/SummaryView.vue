@@ -57,20 +57,21 @@ import StatCard from "@/components/StatCard.vue";
   <div class="card mb-5 pop-in">
     <div class="card-body text-center">
 
+      <div class="stats text-capitalize mb-5">
+        <stat-card title="BackEnd" :progress="10"/>
+        <stat-card title="FrontEnd" :progress="6"/>
+        <stat-card title="DevOps" :progress="7"/>
+        <stat-card title="Architect" :progress="8"/>
+        <stat-card title="management" :progress="8"/>
+      </div>
 
-      <p class="mb-5">
+      <p class="">
           <span class="text-lg">
               My approach to software development
            is backed by a quarter-century of technical evolution </span><br>
         from selling my first Flash-based projects in 2001 to architecting modern, enterprise-grade microservice ecosystems today. </p>
 
-      <div class="stats text-capitalize">
-        <stat-card title="BackEnd" :progress="10"/>
-        <stat-card title="FrontEnd" :progress="6"/>
-        <stat-card title="DevOps" :progress="8"/>
-        <stat-card title="Architect" :progress="7"/>
-        <stat-card title="management" :progress="8"/>
-      </div>
+
 
     </div>
   </div>
