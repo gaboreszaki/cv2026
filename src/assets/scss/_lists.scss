@@ -1,7 +1,8 @@
-.list {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+ul.list {
+  padding: 0 0 0 1rem;
+  list-style-type: disclosure-closed;
+
+  li {
+    margin-bottom: 0.4rem;
+  }
 }

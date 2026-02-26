@@ -13,16 +13,14 @@
   border: var(--global-border);
   border-radius: var(--global-radius);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  padding: 1rem 2rem;
+//  padding: 1rem 2rem;
   font-weight: 500;
-  min-width: 200px;
+  padding: 1rem ;
   .stat-title {
     font-size: 1.4rem;
   }
 
 }
-
-
 
 .holder {
   height: 50px;

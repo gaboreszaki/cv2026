@@ -1,0 +1,10 @@
+.align {
+  &-start { align-items: flex-start; }
+  &-center { align-items: center; }
+  &-end { align-items: flex-end; }
+  &-stretch { align-items: stretch; }
+  &-botom { align-items: baseline; }
+  &-top {
+    align-items: flex-start;
+  }
+}

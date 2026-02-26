@@ -20,7 +20,7 @@ const percent = computed(()=>{
 </script>
 
 <template>
-  <div class="stat"  data-value="A1">
+  <div class="stat"  >
     <div class="stat-title">
       {{ title }}
         <div class="text-xs text-muted">
@@ -29,13 +29,8 @@ const percent = computed(()=>{
     </div>
 
     <div class="progressbar">
-
       <span :style="percent" >&nbsp;</span>
     </div>
 
   </div>
 </template>
-
-<style scoped>
-
-</style>

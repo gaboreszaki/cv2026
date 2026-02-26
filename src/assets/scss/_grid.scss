@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  gap: 1rem;
+
+  grid-template-columns: repeat(1, 1fr);
+
+  @media (min-width: 40em) {
+
+    @for $i from 1 through 6 {
+      /// Grid Size (how many cols)
+      &-#{$i} {
+        grid-template-columns: repeat($i, 1fr);
+      }
+
+      /// Grid Col Span
+      &-col-span-#{$i} {
+        grid-column: span $i;
+      }
+      /// Grid Row Span
+      &-row-span-#{$i} {
+        grid-row: span $i;
+      }
+
+    }
+  }
+
+}

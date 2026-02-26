@@ -1,51 +1,34 @@
 <script setup lang="ts">
+import SkillItem from "@/components/SkillItem.vue";
 import {useSkillStore} from "@/stores/skill.ts"
-import Progressbar from "@/components/Progressbar.vue";
-import moment from 'moment'
+import StatCard from "@/components/StatCard.vue";
 
 const skillStore = useSkillStore()
+let skills = skillStore.skills.sort((a,b) => a.order - b.order);
+
+
 </script>
 
 <template>
     <!-- container-->
-    <div class="flex gap-col-2">
+    <div class="grid grid-5 text-capitalize mb-2">
+        <stat-card title="BackEnd" :progress="10"/>
+        <stat-card title="FrontEnd" :progress="6"/>
+        <stat-card title="DevOps" :progress="7"/>
+        <stat-card title="Architect" :progress="8"/>
+        <stat-card title="management" :progress="8"/>
+    </div>
+
+    <div class="grid grid-3 mb-5">
         <!--  prototype-->
-        <div class="flex-half flex-wa" v-for="skill in skillStore.skills">
-            <div class="card">
-                <div class="card-body">
-                    <h4>{{ skill.title }}</h4>
-                    <div class=" dotted-border-t py-3 my-1" v-if="skill.note">
-                        <ul class="list" v-if="Array.isArray( skill.note )">
-                            <li class="text-muted text-italic" v-for="item in skill.note">{{ item }}</li>
-                        </ul>
-                        <p v-else>
-                            {{skill.note}}
-                        </p>
-                    </div>
-                    <h5 class="mb-2" v-if="skill.sub_title" >{{ skill.sub_title }}:</h5>
-                    <div class="flex justify-between dotted-border-t py-2" v-for="item in skill.data">
-                        <div class="flex align-center">
-                            <i v-if="item.icon" class="text-xl" :class="item.icon"></i>
-                            <div class="ms-2 text-sm ">
-                                <span class="text-capitalize">
-                                    {{ item.name }}
-                                </span><br>
-                                {{ item.versions }}
-                            </div>
-                        </div>
-                        <div class="flex-col flex-third">
-                            <div class="" v-if="item.knowledge_level">
-                                <Progressbar :progress="item.knowledge_level" :class="item.date_ended ? 'inactive': '' "/>
-                            </div>
-                            <div class="text-sm text-center">
-                                {{ item.date_ended ? moment(item.date_ended, "YYYY").diff(moment(item.date_started, "YYYY"), "years") : moment().diff(moment(item.date_started, "YYYY"), "years") }}
-                                year(s)
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+        <div class="card" :class="skill.class" v-for="skill in skills">
+            <div class="card-body">
+                <h4 class="mb-3">{{ skill.title }}</h4>
+                <skill-item :class="skill.class" :skill="skill" />
             </div>
         </div>
+
     </div>
 </template>
 

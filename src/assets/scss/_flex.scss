@@ -1,0 +1,23 @@
+.flex {
+  display: flex;
+
+  &-half {
+    width: 50%
+    //    min-width: calc(50% - $gap) ;
+    //    max-width: 100% ;
+    //    flex-wrap: wrap;
+    //    border: 1px solid red;
+  }
+  &-third {
+    width: 33.33%;
+  }
+  &-quarter {
+    width: 25%;
+
+  }
+
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}

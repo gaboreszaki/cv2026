@@ -42,40 +42,39 @@ const historyStore = useHistoryStore()
                 <div class="my-4">
                     <span v-for="hat in job.hats" class="tag">{{ hat }}</span>
                 </div>
-                <div class="flex">
-                    <div class="flex-half" v-if="job.responsibilities">
-                    <span class="text-bold">
-                      Responsibilities:
-                    </span>
-                        <ul>
-                            <li v-for="responsibility in job.responsibilities">
+
+                <div class="grid grid-2 mb-2">
+                    <!-- Responsibilities -->
+                    <div class="sub-card">
+                        <div class="text-bold dotted-border-b mb-1 pb-1"> Responsibilities: </div>
+                        <ul class="list">
+                            <li class=" " v-for="responsibility in job.responsibilities">
                                 {{ responsibility }}
                             </li>
                         </ul>
                     </div>
-                    <div class="flex-half" v-if="job.highlights && Array.isArray(job.highlights) ">
-                    <span class="text-bold">
-                        Highlights:
-                    </span>
-                        <ul>
-                            <li v-for="highlight in job.highlights">
-                                {{ highlight }}
-                            </li>
+                    <!-- Highlights -->
+                    <div class="sub-card">
+                        <div class="text-bold dotted-border-b mb-1 pb-1">Highlights:</div>
+                        <ul class="list" v-if="Array.isArray(job.highlights)">
+                            <li class="" v-for="highlight in job.highlights">{{ highlight }}</li>
                         </ul>
+                        <p v-else> {{ job.highlights }}</p>
                     </div>
                 </div>
-                <div class="flex justify-evenly  gap-col-2 mt-5">
-                    <div class="flex-col flex-quarter sub-card" v-for="stack in job.tech_stack">
-                        <span class="text-light  mb-1">
+                <!-- Tech Stack -->
+                <div class="grid grid-4">
+                    <div class="text-sm border p-2" v-for="stack in job.tech_stack">
+                        <div class="text-bold">
                             {{ stack.name }}
-                        </span>
-                        <ul class="list">
-                            <li class="" v-for="stackItem in stack.items">
-                                {{ stackItem }}
-                            </li>
-                        </ul>
+                        </div>
+                        <div class="" v-for="stackItem in stack.items">
+                            {{ stackItem }}
+                        </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </div>
