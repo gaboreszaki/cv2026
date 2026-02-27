@@ -4,7 +4,7 @@ import moment from 'moment'
 
 import {useHistoryStore} from "@/stores/history.ts"
 
-const image_location = "/src/assets/images/workhistory/"
+const image_location = "@/assets/images/workhistory/"
 
 const formatYearsMonths = (from: string, until: string) => {
     const totalMonths = moment(until).diff(moment(from), "months");
@@ -16,6 +16,12 @@ const formatYearsMonths = (from: string, until: string) => {
 const historyStore = useHistoryStore()
 
 // employments = historyStore.employments;
+// src/assets/images/workhistory
+
+function getImageUrl(filename: string) {
+    console.log(filename)
+    return new URL(`./assets/images/workhistory/${filename}`, import.meta.url).href
+}
 
 </script>
 <template>
@@ -27,7 +33,8 @@ const historyStore = useHistoryStore()
         </div>
         <div class="card">
             <div class="card-circle-image ">
-                <img :src="image_location + job.image" alt="illustration">
+<!--                <img :src="image_location + job.image" alt="illustration">-->
+                <img :src="getImageUrl(job.image)" alt="illustration">
             </div>
             <div class="card-body">
                 <h2 class="mb-2">{{ job.position }}</h2>

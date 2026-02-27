@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 80">
+    <defs>
+        <style>
+            .logo-c{
+                fill: #000
+            }
+            .logo-v{
+                fill: #72B01D
+            }
+            @media (prefers-color-scheme: dark) {
+                .logo-c{
+                    fill: #fff
+                }
+                .logo-v{
+                    fill: #72B01D
+                }
+            }
+        </style>
+    </defs>
+    <g id="logo-item-c">
+        <polygon points="20 0 0 30 0 50 19.76 80 120 80 100 59.6 30 59.6 20 39.6 30 20 90 20 70 0 20 0" class="logo-c"/>
+    </g>
+    <g id="logo-item-v">
+        <polygon points="40 0 120 80.2 140 80.2 190 0 80 0 130 50 130 70.2 60 0 40 0" class="logo-v"/>
+    </g>
+</svg>

@@ -6,6 +6,10 @@
   backdrop-filter: blur(10px);
   transition: all 1s ease-in-out;
 
+  &.highlighted{
+    background: rgba(from var(--primary-color) r g b / 0.3);
+  }
+
 
   &:hover {
     border: rgba(from var(--primary-color) r g b / 0.6) 1px solid;
@@ -33,8 +37,8 @@
     z-index: -1;
 
     & img {
-//      width: 800px;
-      min-height: 100%;
+      width: 1200px;
+//      min-height: 100%;
       margin-top: -20%;
       margin-left: -20%;
       clip-path: circle(80% at top left);

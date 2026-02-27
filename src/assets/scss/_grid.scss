@@ -4,7 +4,7 @@
 
   grid-template-columns: repeat(1, 1fr);
 
-  @media (min-width: 40em) {
+  @media (min-width: 63em) {
 
     @for $i from 1 through 6 {
       /// Grid Size (how many cols)

@@ -12,12 +12,12 @@
     height: 100%;
     position: relative;
     overflow: hidden;
-    background-color: rgba(from var(--super-green) r g b / 0.6);
+    background-color: rgba(from var(--super-green) r g b / 1);
 
   }
 
   &.inactive span {
-    background-color:  rgba(from var(--color-teal) r g b / 0.6);
+    background-color:  rgba(from var(--super-green) r g b / 0.3);
 
   }
 

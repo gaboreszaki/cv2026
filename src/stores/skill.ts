@@ -8,7 +8,7 @@ export const useSkillStore = defineStore('knowledge', () => {
     const skills = ref([
         {
             order: 1,
-            class: "grid-col-span-2",
+            class: "grid-col-span-2 highlighted",
             title: "Programming style",
             data_type: "array",
             data: [
@@ -20,13 +20,13 @@ export const useSkillStore = defineStore('knowledge', () => {
                 "Don't repeat yourself principle (DRY)",
                 "Single-responsibility principle (SRP)",
                 "Keep It Simple Silly principle (KISS)",
-                "Open-closed principle",
-                "API-first & Mobile-first approach"
+                "Open-Closed principle",
+                "API & Mobile first approach"
             ],
         },
         {
             order: 8,
-            class: "grid-col-span-2",
+            class: "grid-col-span-2 highlighted",
             title: "Sysadmin & DevOps",
             data_type: "array",
             data: [
@@ -41,7 +41,7 @@ export const useSkillStore = defineStore('knowledge', () => {
 
         {
             order: 5,
-            class: "grid-col-span-2",
+            class: "grid-col-span-2 highlighted",
             title: "Modern CSS Design Patterns",
             data_type: "array",
             data: [
