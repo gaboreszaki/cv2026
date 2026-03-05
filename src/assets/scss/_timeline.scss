@@ -15,7 +15,7 @@
   }
 
   .date {
-    border-right: 10px solid var(--primary-color);
+    border-right: 10px solid rgb(from var(--primary-color) r g b / 0.2);
     text-wrap: nowrap;
     position: relative;
     padding-top: 2rem;
@@ -40,7 +40,7 @@
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background-color: var(--color-primary);
+      background-color: var(--highlite);
       display: block;
       position: absolute;
       left: calc(100% - 5px);

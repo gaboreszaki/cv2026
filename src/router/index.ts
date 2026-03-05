@@ -1,20 +1,23 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import {createRouter, createWebHistory} from 'vue-router'
 
 // @ts-ignore
-import SummaryView from '../SummaryView.vue';
-import SkillsView from '../SkillsView.vue';
-
-import DownloadView from "@/DownloadView.vue";
+import SummaryView from '@/SummaryView.vue';
+import SkillsView from '@/SkillsView.vue';
 import WorkHistoryView from "@/WorkHistoryView.vue";
+import ContactView from '@/ContactView.vue';
+import DownloadView from "@/DownloadView.vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-      {path: '/', component: SummaryView},
-      {path: '/skills', component: SkillsView},
-      {path: '/history', component: WorkHistoryView},
-      {path: '/download', component: DownloadView}
-  ],
+    linkActiveClass: 'btn-active',
+    linkExactActiveClass: 'btn-active-exact',
+    history: createWebHistory(import.meta.env.BASE_URL),
+    routes: [
+        {path: '/', component: SummaryView},
+        {path: '/skills', component: SkillsView},
+        {path: '/history', component: WorkHistoryView},
+        {path: '/contact', component: ContactView},
+        {path: '/download', component: DownloadView}
+    ],
 })
 
 export default router

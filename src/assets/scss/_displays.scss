@@ -1,0 +1,17 @@
+.display {
+  &-none { display: none; }
+  &-block { display: block; }
+  &-inline { display: inline; }
+  &-flex { display: flex; }
+  &-grid { display: grid; }
+  &-inline-block { display: inline-block; }
+  &-inline-grid { display: inline-grid; }
+  &-inline-flex { display: inline-flex; }
+
+  &-only-print { display: none; }
+//  &-only-screen { display: block; }
+  @media print {
+    &-only-print { display: block; }
+    &-only-screen { display: none; }
+  }
+}

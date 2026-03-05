@@ -1,12 +1,15 @@
+@forward "reset";
+@forward "color_palette";
 @forward "variables";
 @forward "block";
 @forward "flex";
 @forward "grid";
+@forward "displays";
+@forward "containers";
 @forward "fonts";
 @forward "justify";
 @forward "align";
 @forward "animations";
-@forward "containers";
 @forward "backgrounds";
 @forward "typography";
 @forward "nav";
@@ -24,4 +27,5 @@
 @forward "borders";
 @forward "shadows";
 @forward "progressbar";
+@forward "print";
 

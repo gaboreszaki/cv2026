@@ -32,7 +32,7 @@ nav{
 }
 
 @media (min-width: 63em) {
-  nav:first-child {
+  nav{
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
     grid-template-areas: "nav-items-left logo nav-items-right";

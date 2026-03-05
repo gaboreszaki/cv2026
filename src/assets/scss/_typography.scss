@@ -1,12 +1,23 @@
 body {
   font-family: Switzer-Variable, sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 300;
   font-style: normal;
   font-variation-settings: "wdth" 100;
   font-size: 1.1rem;
   line-height: 1.6;
   letter-spacing: 0.02rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    font-weight: 200;
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    font-weight: 300;
+  }
 }
 
 // Headings (h1-h6)
