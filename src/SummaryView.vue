@@ -19,18 +19,17 @@ import StatCard from "@/components/StatCard.vue";
         </div>
 
         <div class="stats holder text-xxl">
-            <i class="fa-brands fa-laravel"></i>
-            <i class="fa-brands fa-php"></i>
-            <i class="fa-brands fa-vuejs"></i>
-            <i class="fa-brands fa-square-js"></i>
-            <i class="fa-brands fa-python"></i>
-
-            <i class="fa-brands fa-docker"></i>
-            <i class="fa-brands fa-git-alt"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-digital-ocean"></i>
-            <i class="fa-brands fa-aws"></i>
-            <i class="fa-brands fa-jira"></i>
+            <font-awesome-icon icon="fa-brands fa-laravel"/>
+            <font-awesome-icon icon="fa-brands fa-php"/>
+            <font-awesome-icon icon="fa-brands fa-vuejs"/>
+            <font-awesome-icon icon="fa-brands fa-square-js"/>
+            <font-awesome-icon icon="fa-brands fa-python"/>
+            <font-awesome-icon icon="fa-brands fa-docker"/>
+            <font-awesome-icon icon="fa-brands fa-git-alt"/>
+            <font-awesome-icon icon="fa-brands fa-github"/>
+            <font-awesome-icon icon="fa-brands fa-digital-ocean"/>
+            <font-awesome-icon icon="fa-brands fa-aws"/>
+            <font-awesome-icon icon="fa-brands fa-jira"/>
         </div>
 
         <div class="text-center my-10">

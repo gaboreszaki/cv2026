@@ -19,8 +19,7 @@
             <span class="text-lg text-bold"> Gabor Eszaki </span>
         </div>
         <div class="nav-items-right">
-            <router-link class="btn" to="/contact">Contact</router-link>
-            <router-link class="btn btn-highlight" to="/download"><i class="fa-solid fa-file-pdf"></i> Download</router-link>
+            <router-link class="btn btn-highlight" disabled to="/download">Contact & Download</router-link>
         </div>
 
     </nav>

@@ -7,29 +7,37 @@
   width: 100%;
   anchor-name: --tooltip-anchor;
 
-
   &-text {
     visibility: hidden; /* Hidden by default */
 
-    font-size: 0.8rem;
-
-    background: linear-gradient( rgba(from var(--bg-color) r g b / 1) 70%, rgba(from var(--color-gray-dark) r g b / 0.7));
-    border: 1px solid rgba(from var(--color-gray-dark) r g b / 0.4);
+   background: linear-gradient(rgba(from var(--color-black) r g b / .9) 70%, rgba(from var(--color-black) r g b / 1));
+    border-left: 5px solid var(--super-green);
+    border-bottom: none;
     box-shadow: var(--default-shadow);
-//    border: 1px solid black;
-
+    backdrop-filter: blur(10px);
     padding: 1rem;
     border-radius: var(--global-radius);
-
     position: absolute;
-
-    bottom:  110%;
-    position-try-fallbacks: --above;
-
+    bottom: 120%;
     z-index: 1000; /* Ensure tooltip is displayed above content */
 
+    //    animation: rotate-colors 10s infinite;
 
+    font-size: 0.9rem;
+    & div {
+      font-weight: 300;
+      font-style: italic;
+    }
 
+    &:after {
+      content: "";
+      position: absolute;
+      background: var(--color-black);
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      height: 15px;
+      width: 20px;
+      bottom: -14px;
+    }
   }
 
   &:hover .tooltip-text {
@@ -39,10 +47,18 @@
   }
 }
 
-
-
-
-
+//@keyframes rotate-colors {
+//  0% {
+//    border-left: 5px solid var(--super-green);
+////    backdrop-filter: blur(10px);
+//  }
+//  50%  {
+//    border-left: 5px solid var(--color-primary-dark);
+//  }
+//  100% {
+//    border-left: 5px solid var(--super-green);
+//  }
+//}
 
 //@position-try --below-right {
 //  inset: unset;

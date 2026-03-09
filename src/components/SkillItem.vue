@@ -57,7 +57,7 @@ defineProps<{
 
             <div class="tooltip-text" v-if="getKnowledgeEntry(item.knowledge_level)">
                 <h6>
-                    {{ item.name }} - {{ getKnowledgeEntry(item.knowledge_level)?.shorthand }}
+                    {{ item.name }} - {{ getKnowledgeEntry(item.knowledge_level)?.shorthand }} knowledge
                     <span>( {{ item.knowledge_level }} / 10 )</span>
                 </h6>
                 <div class="">
