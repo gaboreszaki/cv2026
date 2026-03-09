@@ -16,7 +16,8 @@ const percent = computed(()=>{
 
 <template>
     <div class="progressbar" >
-        <span :style="percent"  >&nbsp;</span>
+        <span :style="percent"  >&nbsp</span>
+
     </div>
 </template>
 

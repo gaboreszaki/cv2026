@@ -3,7 +3,7 @@ import {defineStore} from 'pinia'
 
 export const useHistoryStore = defineStore('history', () => {
 
-    const employments = ref([
+    const data = ref([
         {
             company_name: "Creative Collisions Limited",
 
@@ -398,6 +398,6 @@ export const useHistoryStore = defineStore('history', () => {
         }
     ])
 
-    return {employments}
+    return {data}
 
 })

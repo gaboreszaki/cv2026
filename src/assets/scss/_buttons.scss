@@ -38,7 +38,7 @@
     background-color: rgba(from var(--highlite) r g b / 0.4);
     box-shadow: 0 0 10px rgba(from var(--highlite) r g b / 0.7);
     border: 1px solid rgba(from var(--color-white) r g b / 0.4);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
   /// Buttons while active:
@@ -50,6 +50,6 @@
     outline: 1px solid rgba(from var(--text-color) r g b / 0.2);
     border-radius: 12px;
 
-    transition: all 0.8s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 }
