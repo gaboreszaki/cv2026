@@ -1,0 +1,67 @@
+.tooltip {
+
+  position: relative;
+
+  border-bottom: 1px dotted black; /* Add dots under the hoverable text */
+  cursor: pointer;
+  width: 100%;
+  anchor-name: --tooltip-anchor;
+
+
+  &-text {
+    visibility: hidden; /* Hidden by default */
+
+    font-size: 0.8rem;
+
+    background: linear-gradient( rgba(from var(--bg-color) r g b / 1) 70%, rgba(from var(--color-gray-dark) r g b / 0.7));
+    border: 1px solid rgba(from var(--color-gray-dark) r g b / 0.4);
+    box-shadow: var(--default-shadow);
+//    border: 1px solid black;
+
+    padding: 1rem;
+    border-radius: var(--global-radius);
+
+    position: absolute;
+
+    bottom:  110%;
+    position-try-fallbacks: --above;
+
+    z-index: 1000; /* Ensure tooltip is displayed above content */
+
+
+
+  }
+
+  &:hover .tooltip-text {
+    visibility: visible;
+    offset-distance: 10px;
+
+  }
+}
+
+
+
+
+
+
+//@position-try --below-right {
+//  inset: unset;
+//  top: anchor(bottom);
+//  left: anchor(left);
+//}
+//@position-try --below-left {
+//  inset: unset;
+//  top: anchor(bottom);
+//  right: anchor(right);
+//}
+//
+//@position-try --above-left {
+//  inset: unset;
+//  bottom: anchor(top);
+//  right: anchor(right);
+//}
+//@position-try --above-right {
+//  inset: unset;
+//  bottom: anchor(top);
+//  left: anchor(left);
+//}

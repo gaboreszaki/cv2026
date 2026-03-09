@@ -2,10 +2,8 @@ import {defineStore} from "pinia";
 import {ref} from "vue";
 
 
-export const useSkillStore = defineStore('knowledge', () => {
-
-
-    const skills = ref([
+export const useSkillStore = defineStore('skill', () => {
+    const data = ref([
         {
             order: 1,
             class: "grid-col-span-2 highlighted",
@@ -385,6 +383,5 @@ export const useSkillStore = defineStore('knowledge', () => {
             ]
         }
     ])
-
-    return {skills}
+    return {data}
 })

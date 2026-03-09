@@ -4,7 +4,7 @@ import {useSkillStore} from "@/stores/skill.ts"
 import StatCard from "@/components/StatCard.vue";
 
 const skillStore = useSkillStore()
-let skills = skillStore.skills.sort((a,b) => a.order - b.order);
+let skills = skillStore.data.sort((a,b) => a.order - b.order);
 
 
 </script>

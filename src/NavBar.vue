@@ -4,7 +4,7 @@
 
 <template>
     <div class="logo display-only-print text-center"  >
-        <img src="/src/assets/images/cv-logo.svg" alt="logo"  height="20" class="inline-block"/>
+        <img src="/src/assets/images/cv-logo.svg" alt="logo"  height="20" class="logo-image "/>
         <span class="text-lg text-bold"> Gabor Eszaki </span>
     </div>
 
@@ -15,7 +15,7 @@
             <router-link class="btn" to="/history">  Work History</router-link>
         </div>
         <div class="logo"  >
-            <img src="/src/assets/images/cv-logo.svg" alt="logo"  height="20" class="inline-block"/>
+            <img src="/src/assets/images/cv-logo.svg" alt="logo"  height="20" class="logo-image "/>
             <span class="text-lg text-bold"> Gabor Eszaki </span>
         </div>
         <div class="nav-items-right">

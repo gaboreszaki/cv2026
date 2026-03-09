@@ -20,6 +20,13 @@ nav{
     text-wrap: nowrap;
     color: var(--text-color);
 
+    .logo-image{
+      height: var(--logo-display-size-height);
+      width: var(--logo-display-size-width);
+      vertical-align: baseline;
+      display: inline-block;
+    }
+
   }
   & .nav-items-left{
     grid-area: nav-items-left;

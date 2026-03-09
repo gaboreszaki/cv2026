@@ -15,8 +15,6 @@ const formatYearsMonths = (from: string, until: string) => {
 
 const historyStore = useHistoryStore()
 
-// employments = historyStore.employments;
-// src/assets/images/workhistory
 
 function getImageUrl(filename: string) {
     console.log(filename)
@@ -25,7 +23,7 @@ function getImageUrl(filename: string) {
 
 </script>
 <template>
-    <div class="timeline-card" v-for="job in historyStore.employments " key="employments.id">
+    <div class="timeline-card" v-for="job in historyStore.data " key="employments.id">
         <div class="date">
             <div class="text-rotate-90">
                 {{ moment(job.date_from, "YYYY-MM-DD").format("YYYY") }}

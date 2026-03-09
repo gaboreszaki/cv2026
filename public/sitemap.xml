@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://new-cv.northweb.dev/
+        </loc>
+    </url>
+    <url>
+        <loc>https://new-cv.northweb.dev/skills
+        </loc>
+    </url>
+    <url>
+        <loc>https://new-cv.northweb.dev/history
+        </loc>
+    </url>
+    <url>
+        <loc>https://new-cv.northweb.dev/contact
+        </loc>
+    </url>
+    <url>
+        <loc>https://new-cv.northweb.dev/download
+        </loc>
+    </url>
+    <!-- Dynamic route: /blog/:id -->
+</urlset>
