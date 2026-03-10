@@ -1,7 +1,7 @@
 body {
 
   color: var(--text-color);
-  background-color: var(--bg-color);
+  background: var(--bg-color);
 
   &:before {
     content: "";
@@ -14,6 +14,7 @@ body {
     pointer-events: none;
     filter: blur(100px);
     z-index: -1;
+    background: radial-gradient(circle at center, var(--bg-dot-color) 0%, var(--bg-color) 70%);
   }
 }
 
@@ -22,13 +23,13 @@ body {
   margin: 0 auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  body:before {
-    background: radial-gradient(circle at center, var(--primary-color) 0%, var(--bg-color) 70%);
-  }
-}
-@media (prefers-color-scheme: light) {
-  body:before {
-    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 70%, rgba(179, 179, 179, 1) 100%);
-  }
-}
+//@media (prefers-color-scheme: dark) {
+//  body:before {
+//    background: radial-gradient(circle at center, var(--primary-color) 0%, var(--bg-color) 70%);
+//  }
+//}
+//@media (prefers-color-scheme: light) {
+//  body:before {
+//    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 70%, rgba(179, 179, 179, 1) 100%);
+//  }
+//}

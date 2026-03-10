@@ -12,10 +12,8 @@
   background: rgba(from var(--primary-color) r g b / 0.2);
   border: var(--global-border);
   border-radius: var(--global-radius);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-//  padding: 1rem 2rem;
   font-weight: 500;
-  padding: 1rem ;
+  padding: 1rem;
   .stat-title {
     font-size: 1.4rem;
   }
@@ -23,21 +21,31 @@
 }
 
 .holder {
-  height: 50px;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  height: auto;
+  justify-content: center;
+  gap: 10px;
 }
 
-.holder:after {
-  content: "";
-  height: 10px;
-  width: 100%;
-  position: relative;
-  top: -25px;
-  z-index: -1;
-  border: var(--global-border);
-  border-radius: 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  background-color: rgba(from var(--primary-color) r g b / 0.1);
-  backdrop-filter: blur(10px);
+
+
+@media (min-width: 34em) {
+  .holder {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    height: 50px;
+    justify-content: space-between;
+  }
+  .holder:after {
+    content: "";
+    height: 10px;
+    width: 100%;
+    position: relative;
+    top: -40px;
+    z-index: -1;
+    border-radius: 50px;
+    border: var(--global-border);
+    background-color: rgba(from var(--primary-color) r g b / 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
 }

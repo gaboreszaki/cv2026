@@ -7,10 +7,11 @@
   width: 100%;
   anchor-name: --tooltip-anchor;
 
+
   &-text {
     visibility: hidden; /* Hidden by default */
-
-   background: linear-gradient(rgba(from var(--color-black) r g b / .9) 70%, rgba(from var(--color-black) r g b / 1));
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+   background: linear-gradient(rgba(from var(--bg-color) r g b / .9) 70%, rgba(from var(--bg-color) r g b / 1));
     border-left: 5px solid var(--super-green);
     border-bottom: none;
     box-shadow: var(--default-shadow);
@@ -32,7 +33,7 @@
     &:after {
       content: "";
       position: absolute;
-      background: var(--color-black);
+      background: var(--bg-color);
       clip-path: polygon(0 0, 100% 0, 50% 100%);
       height: 15px;
       width: 20px;

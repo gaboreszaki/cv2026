@@ -32,13 +32,14 @@
     --text-color: var(--color-white);
     --text-muted: var(--color-gray-mid);
     --bg-color: var(--color-black);
+    --bg-dot-color: var(--primary-color);
 
   }
 
   /// LIGHT Mode:
   @media (prefers-color-scheme: light) {
 
-    --primary-color: rgba(from var(--color-primary-light) r g b / 0.8);
+    --primary-color: #fff;
     --secondary-color: rgba(from var(--color-secondary-light) r g b / 0.8);
     --info-color: rgba(from var(--color-highlight-light) r g b / 1);
     --success-color: rgba(from var(--color-accent-light) r g b / 0.4);
@@ -48,9 +49,11 @@
     --highlite: rgba(from var(--color-highlight-light) r g b / 1);
     --super-green: rgb(from var(--color-accent-light) r g b);
 
-    --text-color: var(--color-downriver);
+    --text-color: #021e23;
     --text-muted: var(--color-gray-dark);
-    --bg-color: var(--color-white);
+    --bg-color: #dcdcdc;
+    --bg-dot-color: rgb(150, 204, 237);
+//    --bg-dot-color: #6795a6;
 
   }
 

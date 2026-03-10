@@ -34,7 +34,7 @@ defineProps<{
             <!-- Icon & Text -->
             <div class="flex ">
                 <div style="width: 40px">
-                    <font-awesome-icon :icon="item.icon" class="text-xl" />
+                    <font-awesome-icon v-if="item.icon" :icon="item.icon" class="text-xl" />
 <!--                    <i v-if="item.icon" class="text-xl" :class="item.icon"></i>-->
                 </div>
                 <div class="ms-2 text-sm ">
