@@ -1,0 +1,10 @@
+$step:1px;
+.round {
+
+  &-0 {border-radius: 0 !important;}
+  &-full { border-radius: 50% !important; }
+
+  @for $i from 1 through 20 {
+    &-#{$i} { border-radius: $i * $step !important; }
+  }
+}

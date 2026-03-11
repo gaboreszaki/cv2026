@@ -11,26 +11,85 @@
   border: 1px solid transparent;
   outline: 1px solid transparent;
 
+  &-block {
+    display: block;
+    width: 100%;
+  }
+  &-inline {
+    display: inline-block;
+  }
+  &-link {
+    background-color: transparent;
+    color: var(--secondary-color);
+    text-decoration: dotted underline;
+
+    &:hover{
+    color: var(--primary-color);
+    text-decoration: none;
+    }
+
+    &-primary{
+      color: var(--primary-color);
+    }
+    &-secondary{
+      color: var(--secondary-color);
+    }
+    &-success{
+      color: var(--success-color);
+    }
+    &-danger{
+      color: var(--danger-color);
+    }
+  }
+
   &-primary {
     background-color: var(--primary-color);
+    &-outline{
+      background-color: transparent;
+      border: 1px solid var(--primary-color);
+    }
   }
   &-secondary {
     background-color: var(--secondary-color);
+    &-outline{
+      background-color: transparent;
+      border: 1px solid var(--secondary-color);
+    }
   }
   &-success {
     background-color: var(--success-color);
+    &-outline{
+      background-color: transparent;
+      border: 1px solid var(--success-color);
+    }
   }
   &-danger {
     background-color: var(--danger-color);
+    &-outline{
+      background-color: transparent;
+      border: 1px solid var(--danger-color);
+    }
   }
   &-warning {
     background-color: var(--warning-color);
+    &-outline{
+      background-color: transparent;
+      border: 1px solid var(--warning-color);
+    }
   }
   &-info {
     background-color: var(--info-color);
+    &-outline{
+      background-color: transparent;
+      border: 1px solid var(--info-color);
+    }
   }
   &-highlight {
     background: linear-gradient(0deg, rgba(from var(--highlite) r g b / .6) 25%, rgba(from var(--highlite) r g b / 0.4) 100%);
+    &-outline{
+      background-color: transparent;
+      border: 1px solid var(--highlite);
+    }
   }
 
   //// Buttons states:

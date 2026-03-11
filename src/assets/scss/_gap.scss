@@ -1,4 +1,7 @@
 .gap {
+
+  &-0 { gap: 0; }
+
   @for $i from 1 through 10 {
     &-#{$i} {
       gap: $i * 0.5rem;
@@ -7,6 +10,9 @@
 }
 
 .gap-col {
+
+  &-0 { gap: 0; }
+
   @for $i from 1 through 10 {
     &-#{$i} {
       gap: $i * 0.5rem;

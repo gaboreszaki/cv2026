@@ -2,6 +2,7 @@ body {
 
   color: var(--text-color);
   background: var(--bg-color);
+  height: 100%;
 
   &:before {
     content: "";
@@ -21,6 +22,14 @@ body {
 .container {
   width: clamp(320px, 90%, 1200px);
   margin: 0 auto;
+  height: 100%;
+}
+
+
+.download-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
 }
 
 //@media (prefers-color-scheme: dark) {

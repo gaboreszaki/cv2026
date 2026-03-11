@@ -5,7 +5,7 @@ import SummaryView from '@/SummaryView.vue';
 import SkillsView from '@/SkillsView.vue';
 import WorkHistoryView from "@/WorkHistoryView.vue";
 import ContactView from '@/ContactView.vue';
-import DownloadView from "@/DownloadView.vue";
+
 
 const router = createRouter({
     linkActiveClass: 'btn-active',
@@ -16,7 +16,6 @@ const router = createRouter({
         {path: '/skills', component: SkillsView},
         {path: '/history', component: WorkHistoryView},
         {path: '/contact', component: ContactView},
-        {path: '/download', component: DownloadView}
     ],
 })
 
