@@ -8,6 +8,7 @@ span.tag {
   clip-path: polygon(calc(0% + 20px) 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
   text-wrap: balance;
   background: var(--primary-color);
+  text-transform:capitalize;
 //  font-family: Switzer-Medium, sans-serif;
 //  text
   font-weight: 300;

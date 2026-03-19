@@ -7,7 +7,6 @@ import InfoDiv from "@/components/InfoDiv.vue";
     <div class="footer">
 
         <div class="container">
-            <h5 class="mb-2"> Contact Info &amp; links: </h5>
             <div class=" grid grid-5 text-sm">
                 <info-div title="Name" text="Gabor Eszaki" icon="fa-solid fa-user"/>
                 <info-div title="Email" text="bXIuZ2Fib3IuZXN6YWtpQGdtYWlsLmNvbQ==" type="email" icon="fa-solid fa-at"/>
@@ -30,12 +29,17 @@ import InfoDiv from "@/components/InfoDiv.vue";
                 <div class="sub-card text-center text-muted ">
                     This site dont use any cookies, we dont share any data with any third party. <br>
                     No CSS framework was used. This website and it's css framework was created from scratch. <br>
-                    The <a href="https://github.com/gaboreszaki/cv2026" target="_blank">sourcecode of this website</a> is public under Apache License 2.0
+                    The <a href="https://github.com/gaboreszaki/cv2026" target="_blank">source-code of this website</a> is public under Apache License 2.0
                 </div>
-                <div class="text-center align-center">
-                    <span class="text-muted">  Website last updated: </span> 2026-03-11 | <span class="text-muted">
-                        Data last updated:
-                    </span> 2026-03-11
+                <div class="grid grid-3 text-center align-center">
+                    <div class="sub-card text-muted"><strong>Website</strong> last updated: <br><span class="text-bold text-white">
+                        2026-03-19
+                    </span></div>
+                    <div class="sub-card text-muted"><strong>Website</strong> Version: <br><span class="text-bold text-white">Beta v0.9c</span></div>
+                    <div class="sub-card text-muted"><strong>Data</strong> last updated: <br><span class="text-bold text-white">
+                        2026-03-19
+                    </span></div>
+
                 </div>
             </div>
 

@@ -75,7 +75,7 @@ export const useSkillStore = defineStore('skill', () => {
                     name: "Python",
                     versions: "(v2.7 – 3.7)",
                     date_started: 2019,
-                    knowledge_level: 6
+                    knowledge_level: 5
                 },
 
                 {
@@ -104,7 +104,7 @@ export const useSkillStore = defineStore('skill', () => {
                     name: "SASS ",
                     versions: null,
                     date_started: 2008,
-                    knowledge_level: 8
+                    knowledge_level: 9
                 },
                 {
                     icon: "fa-brands fa-less",
@@ -131,7 +131,7 @@ export const useSkillStore = defineStore('skill', () => {
                     versions: "(v13)",
                     date_started: 2025,
                     date_ended: 2026,
-                    knowledge_level: 2
+                    knowledge_level: 1
                 },
                 {
                     name: "C++",
@@ -178,7 +178,7 @@ export const useSkillStore = defineStore('skill', () => {
                     name: "PostgreSQL",
                     versions: "(v2.7 – 3.7)",
                     date_started: 2018,
-                    knowledge_level: 5
+                    knowledge_level: 6
                 },
                 {
                     icon: "fa-brands fa-docker",
@@ -199,7 +199,7 @@ export const useSkillStore = defineStore('skill', () => {
                     name: "AWS ecosystem",
                     versions: null,
                     date_started: 2021,
-                    knowledge_level: 5
+                    knowledge_level: 6
                 },
                 {
                     icon: "fa-brands fa-digital-ocean",
@@ -234,14 +234,14 @@ export const useSkillStore = defineStore('skill', () => {
                     versions: "(v3.5)",
                     date_started: 2012,
                     date_ended: 2014,
-                    knowledge_level: 4
+                    knowledge_level: 6
                 },
                 {
                     name: "Yii 2",
                     versions: "(V2 – 3)",
                     date_started: 2020,
                     date_ended: 2022,
-                    knowledge_level: 5
+                    knowledge_level: 7
                 },
                 {
                     icon: "fa-brands fa-symfony",
@@ -291,7 +291,7 @@ export const useSkillStore = defineStore('skill', () => {
                     name: "Node.js",
                     versions: "(V2.7 – 3.7)",
                     date_started: null,
-                    knowledge_level: 3
+                    knowledge_level: 2
                 }
             ]
         },
@@ -311,13 +311,13 @@ export const useSkillStore = defineStore('skill', () => {
                     name: "Tailwind",
                     versions: "(v3.0 - v4.0)",
                     date_started: 2022,
-                    knowledge_level: 6
+                    knowledge_level: 7
                 },
                 {
                     name: "Animate CSS",
                     versions: "(v3.0)",
                     date_started: 2022,
-                    knowledge_level: 5
+                    knowledge_level: 7
                 }
             ]
         },

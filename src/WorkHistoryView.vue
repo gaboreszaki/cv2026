@@ -6,8 +6,11 @@ import {useHistoryStore} from "@/stores/history.ts"
 
 const image_location = "@/assets/images/workhistory/"
 
-const formatYearsMonths = (from: string, until: string) => {
-    const totalMonths = moment(until).diff(moment(from), "months");
+const formatYearsMonths = (from: string, until: string|null) => {
+
+    // if (!until){until = date}
+
+    const totalMonths =  until ? moment(until).diff(moment(from), "months"): moment().diff(moment(from), "months");
     const years = Math.floor(totalMonths / 12);
     const months = totalMonths % 12;
     return `${years} year${years === 1 ? "" : "s"} ${months} month${months === 1 ? "" : "s"}`;
@@ -42,7 +45,7 @@ function getImageUrl(filename: string) {
                 </h6>
                 <h6 class="m-0">{{ job.company_location }} / {{ job.country }}</h6>
                 <div class="text-xs">
-                    TOS: {{ formatYearsMonths(job.date_from, job.date_until) }} ( From {{ moment(job.date_from, "YYYY-MM-DD").format("YYYY MMM") }} to {{ moment(job.date_until, "YYYY-MM-DD").format("YYYY MMM") }} )
+                    TOS: {{ formatYearsMonths(job.date_from, job.date_until) }} ( From {{ moment(job.date_from, "YYYY-MM-DD").format("YYYY MMM") }} to {{ job.date_until ? moment(job.date_until, "YYYY-MM-DD").format("YYYY MMM") : "present" }} )
                 </div>
                 <div class="my-4">
                     <span v-for="hat in job.hats" class="tag">{{ hat }}</span>

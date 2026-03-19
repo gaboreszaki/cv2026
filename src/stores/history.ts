@@ -5,6 +5,80 @@ export const useHistoryStore = defineStore('history', () => {
 
     const data = ref([
         {
+            company_name: "Various",
+
+            company_li_url: null,
+            company_location: "International",
+            country: "Hungary, Germany, Ireland",
+            country_code: "HU, DE, IE",
+            position: "Contractor - Freelancer",
+            date_from: "2023-02-01",
+            date_until: null,
+            image: "pexels-thisisengineering-3861976.jpg",
+            hats: [
+                "Software Engineering consultant",
+                "Lead Architect",
+                "DevOp"
+            ],
+            responsibilities: [
+                "Define technical roadmaps and architectural blueprints that align long-term business goals with scalable software solutions.",
+                "Oversee the end-to-end SDLC, from initial stakeholder requirement gathering to final production deployment and monitoring.",
+                "Design and maintain cloud-native infrastructure using Infrastructure-as-Code (IaC) to ensure environment consistency and security."
+            ],
+            highlights: [
+                "Reduced deployment frequency from weeks to minutes by engineering a robust CI/CD pipeline and automated testing suite.",
+                "Successfully migrated a monolithic legacy system to a microservices architecture, resulting in a 40% increase in system throughput.",
+                "Achieved 99.99% system uptime by implementing proactive observability, automated failovers, and self-healing infrastructure."
+
+            ],
+            tech_stack: [
+                {
+                    name: "Frameworks",
+                    items: [
+                        "Laravel 7.1 - 11.0,",
+                        "Laravel - Jetstream",
+                        "Vue.js 3",
+
+                    ]
+                },
+                {
+                    name: "Languages",
+                    items: [
+                        "PHP 7.0 - 8.5",
+                        "TypeScript",
+                        "Python 3",
+                        "Bash",
+                        "HTML5 & CSS3",
+                        "SASS & SCSS",
+                        "JSON, XML, Markdown"
+                    ]
+                },
+                {
+                    name: "Components",
+                    items: [
+                        "Docker containers",
+                        "AWS Ecosystem",
+                        "DigitalOcean",
+                        "Vue.js",
+                        "Vite",
+                        "Tailwind"
+                    ]
+                },
+                {
+                    name: "Tools",
+                    items: [
+                        "Environment: Agile / Scrum",
+                        "Dependency management: Composer / NPM ",
+                        "Version management: GitHub ",
+                        "CI & CD: Github Actions",
+                        "Project management: Jira",
+                        "Issue tracking: Jira",
+                        "Team collaboration: Slack, Google meet"
+                    ]
+                }
+            ]
+        },
+        {
             company_name: "Creative Collisions Limited",
 
             company_li_url: "https://www.linkedin.com/company/mydutycollect/",
