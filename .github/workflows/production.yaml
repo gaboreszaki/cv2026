@@ -6,7 +6,7 @@ on:
       - main
 jobs:
   deploy:
-    environment: (prod) gabor.northweb.dev
+    environment: (prod) gabor.northweb.co.uk
     name: "Triggering Remote Deployer"
     runs-on: ubuntu-latest
     # needs: test
