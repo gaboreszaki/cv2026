@@ -63,7 +63,7 @@ function getImageUrl(filename: string) {
                     </div>
                     <!-- Highlights -->
                     <div class="sub-card">
-                        <div class="text-bold dotted-border-b mb-1 pb-1">Highlights:</div>
+                        <div class="text-bold dotted-border-b mb-1 pb-1">Worth to mention:</div>
                         <ul class="list" v-if="Array.isArray(job.highlights)">
                             <li class="" v-for="highlight in job.highlights">{{ highlight }}</li>
                         </ul>

@@ -18,7 +18,7 @@ import InfoDiv from "@/components/InfoDiv.vue";
                 <info-div title="Linkedin" text="https://www.linkedin.com/in/gaboreszaki/" type="link" icon="fa-brands fa-linkedin"/>
                 <div class="grid grid-col-span-2 text-center align-center">
                     <!--            <h3> Download CV </h3>-->
-                    <a href="" class="btn btn-primary round-10 px-5 py-2">
+                    <a href="/gabor_cv_2026_v1.0.pdf" target="_blank" class="btn btn-primary round-10 px-5 py-2">
                         <font-awesome-icon icon="fa-solid fa-download"/>
                         Download as PDF
                     </a>
@@ -26,20 +26,21 @@ import InfoDiv from "@/components/InfoDiv.vue";
             </div>
 
             <div class="grid gap-2 mt-3">
-                <div class="sub-card text-center text-muted ">
-                    This site dont use any cookies, we dont share any data with any third party. <br>
-                    No CSS framework was used. This website and it's css framework was created from scratch. <br>
-                    The <a href="https://github.com/gaboreszaki/cv2026" target="_blank">source-code of this website</a> is public under Apache License 2.0
-                </div>
+
                 <div class="grid grid-3 text-center align-center">
-                    <div class="sub-card text-muted"><strong>Website</strong> last updated: <br><span class="text-bold text-white">
+                    <div class=" text-muted"><strong>Website</strong> last updated: <br><span class="text-bold text-white">
                         2026-03-19
                     </span></div>
-                    <div class="sub-card text-muted"><strong>Website</strong> Version: <br><span class="text-bold text-white">Beta v0.9c</span></div>
-                    <div class="sub-card text-muted"><strong>Data</strong> last updated: <br><span class="text-bold text-white">
+                    <div class=" text-muted"><strong>Website</strong> Version: <br><span class="text-bold text-white">Beta v0.9c</span></div>
+                    <div class=" text-muted"><strong>Data</strong> last updated: <br><span class="text-bold text-white">
                         2026-03-19
                     </span></div>
 
+                </div>
+                <div class="text-center text-muted mt-3 ">
+                    This site dont use any cookies, we dont share any data with any third party. <br>
+                    No CSS framework was used. This website and it's css framework was created from scratch. <br>
+                    The <a href="https://github.com/gaboreszaki/cv2026" target="_blank">source-code of this website</a> is public under Apache License 2.0
                 </div>
             </div>
 

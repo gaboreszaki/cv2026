@@ -7,19 +7,14 @@ export const useSkillStore = defineStore('skill', () => {
         {
             order: 1,
             class: "grid-col-span-2 highlighted",
-            title: "Programming style",
+            title: "Programming Style & Philosophy",
             data_type: "array",
             data: [
-                "NO VIBE CODING - NO AI generated slop",
-                "Optimised, Clean, Readable Code (with PSR-12 standards)",
-                "Object Oriented Programming (OOP) with MVC",
-                "MicroServices Architecture",
-                "Test Driven Development (TDD)",
-                "Don't repeat yourself principle (DRY)",
-                "Single-responsibility principle (SRP)",
-                "Keep It Simple Silly principle (KISS)",
-                "Open-Closed principle",
-                "API & Mobile first approach"
+
+                "Intentional, Hand-Crafted Code: Dedicated to writing deliberate, optimal, and clean code, completely avoiding unreliable auto-generated shortcuts.",
+                "Strict Standards & Architecture: Adhering strictly to PSR-12 standards and Object-Oriented Programming (OOP) utilizing MVC patterns.",
+                "Core Engineering Principles: Deeply rooted in TDD , DRY, SRP, OCP , and KISS  methodologies.",
+                "Modern Delivery: Championing an API-first and Mobile-first development approach."
             ],
         },
         {
@@ -218,8 +213,8 @@ export const useSkillStore = defineStore('skill', () => {
                 {
                     icon: "fa-brands fa-laravel",
                     name: "Laravel",
-                    versions: "(V5.8 – 11)",
-                    date_started: 2019,
+                    versions: "(V4.2 – 13)",
+                    date_started: 2014,
                     knowledge_level: 9
                 },
                 {

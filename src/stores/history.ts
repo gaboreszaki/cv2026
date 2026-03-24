@@ -59,7 +59,6 @@ export const useHistoryStore = defineStore('history', () => {
                         "Docker containers",
                         "AWS Ecosystem",
                         "DigitalOcean",
-                        "Vue.js",
                         "Vite",
                         "Tailwind"
                     ]
