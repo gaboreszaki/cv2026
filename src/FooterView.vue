@@ -33,7 +33,7 @@ import InfoDiv from "@/components/InfoDiv.vue";
                     </span></div>
                     <div class=" text-muted"><strong>Website</strong> Version: <br><span class="text-bold text-white">Beta v0.9c</span></div>
                     <div class=" text-muted"><strong>Data</strong> last updated: <br><span class="text-bold text-white">
-                        2026-03-19
+                        2026-07-14
                     </span></div>
 
                 </div>
