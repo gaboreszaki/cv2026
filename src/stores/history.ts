@@ -23,19 +23,22 @@ export const useHistoryStore = defineStore('history', () => {
             responsibilities: [
                 "Define technical roadmaps and architectural blueprints that align long-term business goals with scalable software solutions.",
                 "Oversee the end-to-end SDLC, from initial stakeholder requirement gathering to final production deployment and monitoring.",
-                "Design and maintain cloud-native infrastructure using Infrastructure-as-Code (IaC) to ensure environment consistency and security."
+                "Design and maintain cloud-native infrastructure using Infrastructure-as-Code (IaC) to ensure environment consistency and security.",
+                "Architect and develop enterprise-grade web applications utilizing PHP and the Laravel framework, adhering to modern design patterns and PSR standards.",
+                "Optimize backend performance, database schemas, and caching layers to ensure high availability and seamless data handling for complex web systems."
             ],
             highlights: [
                 "Reduced deployment frequency from weeks to minutes by engineering a robust CI/CD pipeline and automated testing suite.",
                 "Successfully migrated a monolithic legacy system to a microservices architecture, resulting in a 40% increase in system throughput.",
-                "Achieved 99.99% system uptime by implementing proactive observability, automated failovers, and self-healing infrastructure."
+                "Engineered high-performance PHP/Laravel solutions that streamlined business workflows and significantly improved response latencies",
+                "Authored and maintained open-source Python plugins."
 
             ],
             tech_stack: [
                 {
                     name: "Frameworks",
                     items: [
-                        "Laravel 7.1 - 11.0,",
+                        "Laravel 7.1 - 13.0,",
                         "Laravel - Jetstream",
                         "Vue.js 3",
 
