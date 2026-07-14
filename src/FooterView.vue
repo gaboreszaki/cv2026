@@ -18,7 +18,7 @@ import InfoDiv from "@/components/InfoDiv.vue";
                 <info-div title="Linkedin" text="https://www.linkedin.com/in/gaboreszaki/" type="link" icon="fa-brands fa-linkedin"/>
                 <div class="grid grid-col-span-2 text-center align-center">
                     <!--            <h3> Download CV </h3>-->
-                    <a href="/gabor_cv_2026_v1.0.pdf" target="_blank" class="btn btn-primary round-10 px-5 py-2">
+                    <a href="/gabor_cv_2026_v1_2_no_image.pdf" target="_blank" class="btn btn-primary round-10 px-5 py-2">
                         <font-awesome-icon icon="fa-solid fa-download"/>
                         Download as PDF
                     </a>
