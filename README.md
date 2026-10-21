@@ -34,4 +34,4 @@ Development: https://gabor.northweb.dev/
 
 ## License
 
-This project is open-source and available under the MIT License.
+This project is open-source and available under the Apache License 2.0.
