@@ -18,13 +18,11 @@ Designed with a focus on modern web standards, performance, and responsive layou
 - **Responsive Layout:** Fully customized grid and layout rules optimized for mobile, tablet, and desktop viewports.
 - **Professional History & Skills Breakdown:** Detailed overview of technical proficiency, development workflows, and engineering milestones.
 
-
 ## Built With
 
 - **HTML5:** Semantic markup structured for accessibility and modern SEO.
 - **Custom CSS Architecture:** A completely bespoke, lightweight styling framework crafted from scratch.
 - **JavaScript (ES6+):** Vanilla JavaScript for dynamic DOM manipulation and lightweight application logic.
-
 
 ## License
 
